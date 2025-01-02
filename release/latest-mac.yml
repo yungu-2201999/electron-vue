@@ -1,0 +1,11 @@
+version: 0.0.0
+files:
+  - url: Custom-0.0.0-arm64-mac.zip
+    sha512: 08C+HqoQk3v34HxlXZCBI1lwVBE5beWbIOME1Noo8dZ5wEY2aOgGh6syOhqZSJifwra3N0dSp69GIxf0ozSChA==
+    size: 95084733
+  - url: Custom-0.0.0-arm64.dmg
+    sha512: dP4EAgcQboVxpF1s8lMDbkF3G7+eYM5TzcNgrc/Mjb5h5IQNEY9EkyJHBGVhtbGCgzk9G6OVE5G0JcVZiW1RMQ==
+    size: 98721676
+path: Custom-0.0.0-arm64-mac.zip
+sha512: 08C+HqoQk3v34HxlXZCBI1lwVBE5beWbIOME1Noo8dZ5wEY2aOgGh6syOhqZSJifwra3N0dSp69GIxf0ozSChA==
+releaseDate: '2024-12-31T17:08:55.266Z'

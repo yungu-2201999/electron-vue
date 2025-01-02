@@ -1,0 +1,22 @@
+directories:
+  output: /Users/runzhi/Desktop/electron-vue/release
+  buildResources: build
+  app: /Users/runzhi/Desktop/electron-vue/dist
+files:
+  - filter:
+      - '**'
+extends: null
+productName: Custom
+appId: com.electron.desktop
+asar: true
+nsis:
+  oneClick: true
+  perMachine: true
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: CustomDesktop
+publish:
+  - provider: generic
+    url: http://localhost:5500/
+electronVersion: 33.2.1
