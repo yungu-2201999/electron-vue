@@ -1,8 +1,12 @@
 import { app, BrowserWindow } from "electron";
 import { CustomScheme } from "./CustomScheme";
+import { CommonWindowEvent } from "./CommonWindowEvent";
+
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = "true";
 let mainWindow: BrowserWindow;
-
+app.on("browser-window-created", (e, win) => {
+  CommonWindowEvent.regWinEvent(win);
+});
 app.whenReady().then(() => {
   let config = {
     webPreferences: {
@@ -24,4 +28,5 @@ app.whenReady().then(() => {
     CustomScheme.registerScheme();
     mainWindow.loadURL(`app://index.html`);
   }
+  
 });
